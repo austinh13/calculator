@@ -1,6 +1,6 @@
 body{
     background-color: rgb(58, 165, 192);
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container{
@@ -34,15 +34,15 @@ body{
     display: flex;
     flex-direction: row;
     gap: 15px;
+    padding-top: 10px;
 }
 
 .rowOne button{
     width: 160px;
-    height: 50px;
+    height: 40px;
     border-width: 0px;
     font-size: 30px;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .delete{
@@ -51,4 +51,15 @@ body{
 
 .clear{
     background-color: blue;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.row button{
+    width: 76px;
+    height: 60px;
+    font-size: 25px;
 }
