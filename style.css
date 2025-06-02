@@ -9,9 +9,46 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: 500px;
-    width: 350px;
+    height: 480px;
+    width: 330px;
     background-color: rgb(36, 86, 108);
     border-radius: 25px;
+    border-width: 10px;
+    border-color: black;
+    padding: 20px;
     
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
+.display{
+    width: 335px;
+    height: 100px;
+    background-color: rgb(47, 111, 139);
+    border-radius: 15px;
+}
+
+.rowOne{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.rowOne button{
+    width: 160px;
+    height: 50px;
+    border-width: 0px;
+    font-size: 30px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.delete{
+    background-color: red;
+}
+
+.clear{
+    background-color: blue;
 }
