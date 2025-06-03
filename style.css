@@ -36,6 +36,23 @@ body{
     background-color: rgb(47, 111, 139);
     border-radius: 15px;
 
+    gap:10px;
+    padding: 10px;
+}
+
+.display p{
+    margin: 0px;
+    height: 25px;
+}
+
+#upperDisplay{
+    color: white;
+    font-size: 20px;
+}
+
+#lowerDisplay{
+    color: white;
+    font-size: 35px;
 }
 
 /* Clear and Delete */
