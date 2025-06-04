@@ -3,7 +3,7 @@ let state    = 0;           // 0 = building operand1, 1 = building operand2, 2 =
 
 function buttonClick(content) {
     const display = document.getElementById("lowerDisplay");
-    const head    = document.getElementById("upperDisplay");
+    const head = document.getElementById("upperDisplay");
     // 1) If the last action was “=” (state==2) and we now see a digit,
     //    reset everything so we start a brand‑new calculation.
     if (state === 2 && !isNaN(content)) {
@@ -26,7 +26,7 @@ function buttonClick(content) {
     }
 
     // 3) If it’s one of the four basic operators:
-    if (["+", "-", "×", "÷"].includes(content)) {
+    if (["+", "-", "*", "/"].includes(content)) {
         // If we were already in “typing secondOperand” (state==1)
         // that means the user just chained a second operator (e.g. “5 + 2 +”),
         // so we first compute the pending result:
@@ -79,3 +79,4 @@ function operate(a, b, op) {
         default: return a;
     }
 }
+
