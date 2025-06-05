@@ -24,6 +24,7 @@ function buttonClick(content) {
         }
         return;
     }
+    
 
     // 3) If it’s one of the four basic operators:
     if (["+", "-", "*", "/"].includes(content)) {
@@ -61,12 +62,23 @@ function buttonClick(content) {
         return;
     }
 
-    // 5) (Optional) Handle “Clear” or “Delete” if you have those buttons:
+    // 5) (Optional) Handle “Clear” if you have those buttons:
     if (content.toLowerCase() === "clear") {
         equation = [0, "", 0];
         state = 0;
         display.innerHTML = "";
         head.innerHTML = "";
+    }
+
+    if(content.toLowerCase() === "delete"){
+        if (state === 0) {
+            equation[0] = Math.floor(equation[0]/10);
+            display.innerHTML = equation[0];
+        } else if (state === 1) {
+            equation[2] = Math.floor(equation[2]/10);
+            display.innerHTML = equation[2];
+        }
+        return;
     }
 }
 
